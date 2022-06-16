@@ -2,12 +2,14 @@ import './App.css';
 
 //Components
 import Stor from './components/Stor';
+//Context
+import CartContextProvider from './context/CartContextProvider';
 
 function App() {
   return (
-    <div className="App">
+    <CartContextProvider>
       <Stor />
-    </div>
+    </CartContextProvider>
   );
 }
 
