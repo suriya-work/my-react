@@ -1,15 +1,25 @@
-import './App.css';
 
 //Components
-import Stor from './components/Stor';
-//Context
-import CartContextProvider from './context/CartContextProvider';
+import Header from "./components/Header";
+import Balance from "./components/Balance";
+import InComeExpenses from "./components/InComeExpenses";
+import TransaCtionList from "./components/TransaCtionList";
+import AddTransaction from "./components/AddTransaction";
+import { GlobalProvider } from "./context/GlobalContext";
+
 
 function App() {
   return (
-    <CartContextProvider>
-      <Stor />
-    </CartContextProvider>
+  <GlobalProvider>
+    <Header />
+    <Balance />
+    <InComeExpenses />
+    <TransaCtionList />
+    <AddTransaction />
+
+  </GlobalProvider>
+   
+   
   );
 }
 

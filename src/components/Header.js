@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Stor = () => {
+const Header = () => {
     return (
         <div>
-            Stor
+            <h1>Expese Tracker</h1>
         </div>
     );
 };
 
-export default Stor;
+export default Header;

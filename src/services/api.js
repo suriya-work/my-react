@@ -1,9 +1,18 @@
 import axios from "axios";
 
-const BASE_URL = "https://fakestoreapi.com";
+// const BASE_URL = "https://fakestoreapi.com";
 
-const getCarts = async() => {
-    const respons = await axios.get(`${BASE_URL}/carts`)
-    return respons.data
+// const getCarts = async() => {
+//     const respons = await axios.get(`${BASE_URL}/products`)
+//     return respons.data
+// }
+// export {getCarts}
+
+
+const BASE_URL = "https://fakestoreapi.com";
+const getUser = async () => {
+    const response = await axios.get(`${BASE_URL}/carts`)
+    return response.data;
 }
-export {getCarts}
+
+export {getUser}
